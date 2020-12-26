@@ -31,7 +31,7 @@ class App < Sinatra::Base
   get '/:operation/:number1/:number2' do
     binding.pry
     if params[:operation] == "subtract"
-      
+      #{params[:number1] - 
     "#{params[:number1].to_i}#{params[:operation]} #{params[:number2]}"
   end
   
