@@ -1,4 +1,5 @@
 require_relative 'config/environment'
+require "pry"
 
 class App < Sinatra::Base
   # Write your code here!
@@ -28,7 +29,8 @@ class App < Sinatra::Base
   end
   
   get '/:operation/:number1/:number2' do
-    "#{params[:number1].to_i}#{params[:operation]} #{params[:number2]}"
+    binding.pry
+    # "#{params[:number1].to_i}#{params[:operation]} #{params[:number2]}"
   end
   
 end
