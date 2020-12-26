@@ -30,9 +30,11 @@ class App < Sinatra::Base
   
   get '/:operation/:number1/:number2' do
     binding.pry
+    string = ""
     if params[:operation] == "subtract"
-      "#{params[:number1].to_i - params[:number2]}"
-    "#{params[:number1].to_i}#{params[:operation]} #{params[:number2]}"
+      string = "#{params[:number1].to_i - params[:number2]}"
+    elsif 
+
   end
   
 end
